@@ -2,7 +2,7 @@ import streamlit as st
 st.header("Cabeçalho")
 st.toggle("abc")
 st.text_area("Enter text")
-st.text_input("")
+st.text_input("abc")
 sr.selectbox(
   'Qual sua cor favorita',
   ('Azul', 'Vermelho', 'Verde'))
