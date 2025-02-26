@@ -2,5 +2,8 @@ import streamlit as st
 st.header("Cabeçalho")
 st.toggle("abc")
 st.text_area("Enter text")
-st.text_input("Movie title", "Life of Brian")
+st.text_input("")
+sr.selectbox(
+  'Qual sua cor favorita',
+  ('Azul', 'Vermelho', 'Verde'))
 st.button("Botão Salvar")
