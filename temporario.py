@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 st.header("Cabeçalho")
 st.toggle("abc")
 st.text_area("Enter text")
