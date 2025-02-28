@@ -26,5 +26,5 @@ with st.form(key='form_cadastro'):
         st.write(f"Email: {email}")
         st.write(f"Matrícula: {matricula}")
         st.write(f"CPF: {cpf}")
-        st.write(f"Data de nascimento: {Data de nascimento}")
+        st.write(f"Data de nascimento: {data de nascimento}")
 
