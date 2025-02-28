@@ -2,4 +2,4 @@ import streamlit as st
 
 import streamlit as st
 
-st.write("Hello, *World!* :sunglasses:")
+st.text("This is text\n[and more text](that's not a Markdown link).")
