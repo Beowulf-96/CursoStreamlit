@@ -12,7 +12,7 @@ with st.form(key='form_cadastro'):
     matricula = st.text_input("Número de Matrícula")
     Pai = st.text_input("Pai")
     Mãe = st.text_input("Mãe")
-    Nascimento = st.number_input("Idade", min_value=1, max_value=100, step=1)
+    Nascimento = st.number_input("Nascimento", min_value=1, max_value=100, step=1)
     
    
     semestre = st.selectbox("Semestre", ["1º Semestre", "2º Semestre", "3º Semestre", "4º Semestre", "5º Semestre"])
