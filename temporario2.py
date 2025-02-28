@@ -24,5 +24,5 @@ with st.form(key='form_cadastro'):
         st.write(f"Curso: {curso}")
         st.write(f"Email: {email}")
         st.write(f"Matrícula: {matricula}")
-        st.write(f"Semestre: {cpf}")
+        st.write(f"CPF: {cpf}")
 
