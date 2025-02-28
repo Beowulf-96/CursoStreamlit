@@ -12,6 +12,7 @@ with st.form(key='form_cadastro'):
     Pai = st.text_input("Pai")
     Mãe = st.text_input("Mãe")
     cpf = st.text_input('Digite seu CPF:', '')
+    Nascimento = st.date_input("data de nascimento:")
 
     submit_button = st.form_submit_button("Cadastrar Aluno")
 
@@ -25,4 +26,5 @@ with st.form(key='form_cadastro'):
         st.write(f"Email: {email}")
         st.write(f"Matrícula: {matricula}")
         st.write(f"CPF: {cpf}")
+        st.write(f"Data de nascimento: {Data de nascimento}")
 
