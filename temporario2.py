@@ -18,14 +18,6 @@ if cpf and len(cpf) != 11:
 
 data_nascimento = st.date_input('Escolha sua data de nascimento:')
 
-if st.button('Enviar'):
-    if cpf and len(cpf) == 11:
-        st.write(f'CPF: {cpf}')
-        st.write(f'Data de Nascimento: {data_nascimento}')
-    else:
-        st.error('Preencha corretamente o CPF.')
-    
-   
     semestre = st.selectbox("Semestre", ["1º Semestre", "2º Semestre", "3º Semestre", "4º Semestre", "5º Semestre"])
 
     submit_button = st.form_submit_button("Cadastrar Aluno")
