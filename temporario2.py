@@ -11,6 +11,7 @@ with st.form(key='form_cadastro'):
     matricula = st.text_input("Número de Matrícula")
     Pai = st.text_input("Pai")
     Mãe = st.text_input("Mãe")
+    cpf = st.text_input('Digite seu CPF:', '')
 
     submit_button = st.form_submit_button("Cadastrar Aluno")
 
