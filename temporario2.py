@@ -12,8 +12,6 @@ with st.form(key='form_cadastro'):
     Pai = st.text_input("Pai")
     Mãe = st.text_input("Mãe")
 
-    semestre = st.selectbox("Semestre", ["1º Semestre", "2º Semestre", "3º Semestre", "4º Semestre", "5º Semestre"])
-
     submit_button = st.form_submit_button("Cadastrar Aluno")
 
 
@@ -22,7 +20,6 @@ with st.form(key='form_cadastro'):
         st.success("Aluno cadastrado com sucesso!")
            
         st.write(f"Nome: {nome}")
-        st.write(f"Idade: {idade}")
         st.write(f"Curso: {curso}")
         st.write(f"Email: {email}")
         st.write(f"Matrícula: {matricula}")
