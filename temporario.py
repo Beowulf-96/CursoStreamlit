@@ -2,7 +2,7 @@ import streamlit as st
 st.title('Cadastro de Funcionário')
 nome = st.text_input("Digite o nome:")
 sobrenome = st.text_input("Digite o sobrenome:")
-dia = st.number_input("Digite o dia do nascimento:", min_value=1, max_value=31)
+dia = st.number_input("Digite o dia do nascimento:")
 mes = st.number_input("Digite o mês do nascimento:", min_value=1, max_value=12)
 ano = st.number_input("Digite o ano do nascimento:", min_value=1900, max_value=2025)
 st_civil = st.selectbox("Digite o estado civil:", ['Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Viúvo(a)'])
