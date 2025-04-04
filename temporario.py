@@ -1,30 +1,27 @@
 import streamlit as st
-import pandas as pd
-st.header("Cabeçalho")
-st.toggle("abc")
-st.text_area("Enter text")
-st.text_input("abc")
-st.selectbox(
-  'Qual sua cor favorita?',
-  ('Azul', 'Vermelho', 'Verde'))
-st.button("Botão Salvar")
-st.multiselect(
-  'Quais são as suas cores favoritas?',
-  ['Verde', 'Amarelo', 'Vermelho', 'Azul'],
-  ['Amarelo', 'Vermelho'])
-
-st.checkbox('Sorvete')
-st.checkbox('Café')
-st.checkbox('Refrigerante')
-
-st.color_picker("Pick A Color", "#00f900")
-st.feedback("stars")
-
-df = pd.DataFrame(
-  [
-    {"command": "st.selecbox", "rating": 4, "is_widget": True},
-    {"command": "st.balloons", "rating": 5, "is_widget": False},
-    {"command": "st.time_input", "rating": 3, "is_widget": True},
-  ]
-)
-edited_df = st.data_editor(df)
+st.title('Cadastro de Funcionário')
+nome = st.text_input("Digite o nome:")
+sobrenome = st.text_input("Digite o sobrenome:")
+dia = st.number_input("Digite o dia do nascimento:", min_value=1, max_value=31)
+mes = st.number_input("Digite o mês do nascimento:", min_value=1, max_value=12)
+ano = st.number_input("Digite o ano do nascimento:", min_value=1900, max_value=2025)
+st_civil = st.selectbox("Digite o estado civil:", ['Solteiro(a)', 'Casado(a)', 'Divorciado(a)', 'Viúvo(a)'])
+sexo = st.selectbox("Digite o sexo:", ['Masculino', 'Feminino', 'Outro'])
+salario = st.number_input("Digite o salário:", min_value=0)
+aumento = 0
+salario_final = 0
+if salario <= 2500:
+    st.write("Recebe aumento!")
+    while aumento < 500:
+        aumento += 100
+    salario_final = salario + aumento
+else:
+    st.write("Não necessita de aumento!")
+    salario_final = salario
+if st.button('Confirmar Cadastro'):
+    st.subheader('Dados do Funcionário:')
+    st.write(f"Nome: {nome} {sobrenome}")
+    st.write(f"Data de Nascimento: {dia}/{mes}/{ano}")
+    st.write(f"Estado Civil: {est_civil}")
+    st.write(f"Sexo: {sexo}")
+    st.write(f"Salário Final: R${salario_final}")
