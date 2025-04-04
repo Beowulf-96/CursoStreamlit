@@ -22,6 +22,6 @@ if st.button('Confirmar Cadastro'):
     st.subheader('Dados do Funcionário:')
     st.write(f"Nome: {nome} {sobrenome}")
     st.write(f"Data de Nascimento: {dia}/{mes}/{ano}")
-    st.write(f"Estado Civil: {est_civil}")
+    st.write(f"Estado Civil: {st_civil}")
     st.write(f"Sexo: {sexo}")
     st.write(f"Salário Final: R${salario_final}")
